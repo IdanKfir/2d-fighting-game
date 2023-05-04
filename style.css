@@ -1,0 +1,115 @@
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.red-container-div {
+  position: relative;
+  display: inline-block;
+}
+
+.smaller-red-container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.player-health-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 4px solid var(--primary-color);
+  border-left: 4px solid var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.player-health {
+  position: absolute;
+  background: #818cf8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.enemy-health {
+  position: absolute;
+  background: #818cf8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.enemy-health-container {
+  position: relative;
+  width: 100%;
+  border-top: 4px solid var(--primary-color);
+  border-right: 4px solid var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.enemy-healthbar-container {
+  background: linear-gradient(90deg, red, blue);
+  height: 30px;
+  border-radius: 3px;
+
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.player-healthbar-container {
+  background: linear-gradient(45deg, blue, red);
+  height: 30px;
+  width: 100%;
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.timer {
+  background-color: black;
+  width: 100px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  border: 4px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+.display-text {
+  position: absolute;
+  color: var(--primary-color);
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
